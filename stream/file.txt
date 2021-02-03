@@ -1,0 +1,190 @@
+It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { 
+It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { 
+  It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { It is possible to attach multiple Writable streams to a single Readable stream.
+
+The readable.pipe() method returns a reference to the destination stream making it possible to set up chains of piped streams:
+
+const fs = require('fs');
+const r = fs.createReadStream('file.txt');
+const z = zlib.createGzip();
+const w = fs.createWriteStream('file.txt.gz');
+r.pipe(z).pipe(w);
+By default, stream.end() is called on the destination Writable stream when the source Readable stream emits 'end', so that the destination is no longer writable. To disable this default behavior, the end option can be passed as false, causing the destination stream to remain open:
+
+reader.pipe(writer, { 
