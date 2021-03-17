@@ -1,58 +1,59 @@
 const express = require("express")
-const express_graphql = require("express-graphql")
-const graphql = require("graphql")
+const { GraphQLServer } = require("graphql-yoga")
 
-const dataArr = require("./data.json")
+const { authors, books } = require("./data")
 
-const schema = graphql.buildSchema(`
-  type Query {
-    course(id: Int!): Course
-    courses(ids: [Int]!): [Course]
-  }
-  type User {
+const typeDefs = `
+  type Author {
     id: Int!
     name: String!
   }
   type Course {
     id: Int!
+    author: Author
     title: String!
     description: String!
     topic: String!
     url: String!
-    author: User
   }
-`)
-//     author: User!
+  type Query {
+    msg: String!
+    course(id: Int!): Course
+    courses(ids: [Int]!): [Course]
+  }
+`
 
-const resolver = {
-  course: (root, args, context, info) => {
-    console.log(context)
-    const { id } = root
-    return dataArr.find((el) => el.id === id)
-  },
-  courses: ({ ids }) => {
-    return dataArr.filter((el) => ids.includes(el.id))
-  },
-}
-const fieldResolver = () => {
-  return {
-    author: (args) => {
-      return { id: 1, name: "test" }
+const resolvers = {
+  Query: {
+    msg: () => {
+      return "hello graphql"
     },
-  }
+    course: (_, args) => {
+      const { id } = args
+      return books.find((el) => el.id === id)
+    },
+    courses: (_, { ids }) => {
+      return books.filter((el) => ids.includes(el.id))
+    },
+  },
+  Course: {
+    author: (parent) => {
+      const bookId = parent.id
+      let author = authors.find((el) => el.books.includes(bookId))
+      return { id: author.id, name: author.name }
+    },
+  },
+}
+const opts = {
+  port: 4000,
+  endpoint: "/graphql",
 }
 
-const app = express()
+const server = new GraphQLServer({ typeDefs, resolvers, opts })
+server.express.use("/rest", (req, res) => {
+  res.send("combination of graphql and rest is possible lol")
+})
 
-app.use(
-  "/graphql",
-  express_graphql.graphqlHTTP({
-    schema,
-    rootValue: resolver,
-    graphiql: true,
-    fieldResolver,
-  })
-)
-app.listen(4000, () => {
-  console.log("app is running on port 4000")
+server.start(() => {
+  console.log(`Server running at http://localhost:${opts.port}${opts.endpoint}`)
 })
